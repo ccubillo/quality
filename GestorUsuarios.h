@@ -11,11 +11,14 @@
 #include <map>
 #include <set>
 using namespace std;
-
+/**
+ * Users manager
+ * managed users and connect users
+ */
 class GestorUsuarios {
 private:
-    std::map<string,Usuario,less<string> > usuarios;
-    std::map<string,Usuario*,less<string> > conectados;
+    std::map<string,Usuario,less<string> > usuarios;///<map compounds by word and user
+    std::map<string,Usuario*,less<string> > conectados;///<map compounds by word and a point of user
     
 public:
     GestorUsuarios();

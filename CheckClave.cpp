@@ -9,7 +9,10 @@
 #include <fstream>
 #include "file not found.h"
 #include <iostream>
-
+/**
+* CheckKey constructor
+* read the file lemario-espanol-utf8.txt and initialize tree
+*/
 CheckClave::CheckClave() {
     ifstream fichero;
     fichero.open("lemario-espanol-utf8.txt");
@@ -25,23 +28,34 @@ CheckClave::CheckClave() {
 
     fichero.close();
 }
-
+/**
+* CheckKey copy constructor
+* @param orig a checkKey
+*/
 CheckClave::CheckClave(CheckClave& orig) {
     this->arbol = orig.arbol;
 }
-
+/**
+ * CheckKey destructor
+ */
 CheckClave::~CheckClave() {
     arbol.clear();
 }
-
+/**
+ * Operator= CheckKey
+ * define operator =
+ * @param c a checkKey
+ * @return a checkKey
+ */
 CheckClave& CheckClave::operator=(CheckClave &c) {
     this->arbol = c.arbol;
     return *this;
 }
 /**
- *
- * @param s
- * @return
+ * Check function
+ * check is the password is correct, if it is correct return 0
+ * @param s a word
+ * @return an integer (0 if key is correct)
  */
 int CheckClave::check(string& s) {
     //Paso las mayusculas a minusculas

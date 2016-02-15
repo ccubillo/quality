@@ -9,9 +9,16 @@
 #define	FILE_NOT_FOUND_H
 #include <exception>
 using namespace std;
-
+/**
+ * File not found exception
+ */
 class file_not_found: public exception{
 public:
+	/**
+	 * A exception
+	 * Show the exception when the file is not found
+	 * @return
+	 */
     virtual const char* what() const throw(){
         return "Fichero no encontrado";
     }

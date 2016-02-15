@@ -11,10 +11,15 @@
 #include "existing user.h"
 #include "password not accepted.h"
 #include "user not found.h"
-
+/**
+ * User manager constructor
+ */
 GestorUsuarios::GestorUsuarios() {
 }
-
+/**
+ * User manager copy constructor
+ * @param orig
+ */
 GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     this->usuarios = orig.usuarios;
     //Al hacer la copia de usuarios la direccion de memoria cambia y por eso busco los conectados en los usuarios copiados para obtener su nueva dir. de memoria
@@ -28,10 +33,17 @@ GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     }
     
 }
-
+/**
+ * User manager destructor
+ */
 GestorUsuarios::~GestorUsuarios() {
 }
-
+/**
+ * User manager operator=
+ * define operator =
+ * @param g a user manager
+ * @return
+ */
 GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
 {
     this->conectados.clear();
@@ -48,7 +60,12 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
     }
     return *this;
 }
-
+/**
+ * CheckKey function
+ * check is the key is correct
+ * @param clave key of user
+ * @return a boolean value
+ */
 bool GestorUsuarios::compruebaClave(string &clave) {
     CheckClave c; 
     bool valida = false;
@@ -61,7 +78,10 @@ bool GestorUsuarios::compruebaClave(string &clave) {
     }
     return valida;
 }
-
+/**
+ * To register user
+ * @param u user
+ */
 void GestorUsuarios::altaUsuario(Usuario &u) {
     std::map<string, Usuario, less<string> >::iterator it;
     it = usuarios.find(u.getId());
@@ -76,9 +96,13 @@ void GestorUsuarios::altaUsuario(Usuario &u) {
         } else throw password_not_accepted(); 
     }
 }
-//Primero comprobar que esta conectado y luego llamar a desconexion.
-//Si no siempre salta la excepción de que no está encontrado porque no está conectado.
+/**
+ * to unsubscribe a user
+ * @param id of the user
+ */
 void GestorUsuarios::bajaUsuario(string &id) {
+	//Primero comprobar que esta conectado y luego llamar a desconexion.
+	//Si no siempre salta la excepción de que no está encontrado porque no está conectado.
     std::map<string, Usuario, less<string> >::iterator it;
     it = usuarios.find(id);
     if (it != usuarios.end()) {
@@ -90,7 +114,11 @@ void GestorUsuarios::bajaUsuario(string &id) {
         throw user_not_found();
     }
 }
-
+/**
+ * To change password
+ * @param id of the user
+ * @param clave key of the user
+ */
 void GestorUsuarios::cambiaClave(string &id, string &clave) {
     if (compruebaClave(clave)) {
         std::map<string, Usuario, less<string> >::iterator it;
@@ -107,7 +135,11 @@ void GestorUsuarios::cambiaClave(string &id, string &clave) {
         throw password_not_accepted();
     }
 }
-
+/**
+ * To find a user
+ * @param id of the user
+ * @return user found
+ */
 Usuario& GestorUsuarios::buscaUsuario(string &id) {
     std::map<string, Usuario, less<string> >::iterator it;
     it = usuarios.find(id);
@@ -119,7 +151,11 @@ Usuario& GestorUsuarios::buscaUsuario(string &id) {
         throw user_not_found();
     }
 }
-
+/**
+ * To connect a user
+ * @param id of the user
+ * @param clave key of the user
+ */
 void GestorUsuarios::conexion(string &id, string &clave) {
     std::map<string, Usuario, less<string> >::iterator i;
     i = usuarios.find(id);
@@ -141,7 +177,10 @@ void GestorUsuarios::conexion(string &id, string &clave) {
         throw user_not_found();
     }
 }
-
+/**
+ * To disconnect a user
+ * @param id of the user
+ */
 void GestorUsuarios::desconexion(string &id) {
     std::map<string, Usuario*, less<string> >::iterator it;
     it = conectados.find(id);
@@ -151,13 +190,20 @@ void GestorUsuarios::desconexion(string &id) {
         throw user_not_found();
     }
 }
-
+/**
+ * To check if a user is connect
+ * @param id of the user
+ * @return a boolean value (true if connect or false is not)
+ */
 bool GestorUsuarios::estaConectado(string &id) {
     std::map<string, Usuario*, less<string> >::iterator it;
     it = conectados.find(id);
     return it!=conectados.end();
 }
-
+/**
+ * Show users connect
+ * @return a set of users
+ */
 set<string> GestorUsuarios::usuariosConectados() {
     std::map<string, Usuario*, less<string> >::iterator it = conectados.begin();
     set<string> u;

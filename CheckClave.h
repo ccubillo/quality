@@ -13,10 +13,14 @@
 #include <functional>
 #include <cctype>
 using namespace std;
+/**
+ * CheckKey class
+ */
 class CheckClave {
 private:
-    set<string> arbol;
+    set<string> arbol;///<tree compounds of words
 public:
+
     CheckClave();
     CheckClave(CheckClave& orig);
     virtual ~CheckClave();
