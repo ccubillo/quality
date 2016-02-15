@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: Carolina y María
+ * Author: Carolina y Maria
  *
  * Created on 13 de noviembre de 2015, 17:51
  */

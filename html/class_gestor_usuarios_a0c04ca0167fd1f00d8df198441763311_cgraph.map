@@ -1,0 +1,6 @@
+<map id="GestorUsuarios::altaUsuario" name="GestorUsuarios::altaUsuario">
+<area shape="rect" id="node2" href="$class_usuario.html#aceb0e105938da68e83cfa8f45ec41487" title="Usuario::getId" alt="" coords="279,5,382,32"/>
+<area shape="rect" id="node3" href="$class_usuario.html#a322129e7a34d7b332af4dfa13a4fb8d9" title="Usuario::getClave" alt="" coords="269,56,392,83"/>
+<area shape="rect" id="node4" href="$class_gestor_usuarios.html#a14c8dfce3dabbbdc4cd6214e6093ed60" title="GestorUsuarios::comprueba\lClave" alt="" coords="239,107,423,149"/>
+<area shape="rect" id="node5" href="$class_check_clave.html#a7f2bf7386f3f4d3ae9bc0811141fcaa2" title="CheckClave::check" alt="" coords="471,115,604,141"/>
+</map>
