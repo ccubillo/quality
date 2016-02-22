@@ -1,0 +1,7 @@
+<map id="CheckClave::check" name="CheckClave::check">
+<area shape="rect" id="node2" href="$class_gestor_usuarios.html#a14c8dfce3dabbbdc4cd6214e6093ed60" title="GestorUsuarios::comprueba\lClave" alt="" coords="187,49,371,90"/>
+<area shape="rect" id="node3" href="$class_gestor_usuarios.html#a0c04ca0167fd1f00d8df198441763311" title="GestorUsuarios::altaUsuario" alt="" coords="423,5,608,32"/>
+<area shape="rect" id="node5" href="$class_gestor_usuarios.html#ad14240167762426efe2c8f2af2421fe0" title="GestorUsuarios::cambiaClave" alt="" coords="419,56,612,83"/>
+<area shape="rect" id="node6" href="$class_gestor_usuarios.html#a3b929870c33c4864d3c1f32f2614a64d" title="GestorUsuarios::conexion" alt="" coords="429,107,601,133"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="660,56,711,83"/>
+</map>

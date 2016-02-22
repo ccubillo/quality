@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_usuario.html#a74ba4e76654f3ebabb2bd51f3a748b41" title="Usuario::setClave" alt="" coords="139,5,262,32"/>
+<area shape="rect" id="node3" href="$class_usuario.html#a62f031d10687b259237ca038725c82da" title="Usuario::setNombre" alt="" coords="132,56,269,83"/>
+<area shape="rect" id="node4" href="$class_usuario.html#a567493e3fee3c245fee24db39f8d0e32" title="Usuario::setId" alt="" coords="149,107,252,133"/>
+<area shape="rect" id="node5" href="$class_gestor_usuarios.html#a0c04ca0167fd1f00d8df198441763311" title="GestorUsuarios::altaUsuario" alt="" coords="108,157,293,184"/>
+<area shape="rect" id="node10" href="$class_gestor_usuarios.html#a68d73f9a0ede622220012502ffc23dcf" title="GestorUsuarios::bajaUsuario" alt="" coords="107,461,295,488"/>
+<area shape="rect" id="node11" href="$class_gestor_usuarios.html#a1e57859037abf37a190ad2c60ed22f2b" title="GestorUsuarios::desconexion" alt="" coords="352,436,545,463"/>
+<area shape="rect" id="node12" href="$class_gestor_usuarios.html#ad14240167762426efe2c8f2af2421fe0" title="GestorUsuarios::cambiaClave" alt="" coords="104,208,297,235"/>
+<area shape="rect" id="node13" href="$class_gestor_usuarios.html#a7f941f9780501cd260591a96ba30d048" title="GestorUsuarios::buscaUsuario" alt="" coords="349,292,548,319"/>
+<area shape="rect" id="node14" href="$class_usuario.html#a5f2234908325bc89b0849c0ab28d61aa" title="Usuario::toString" alt="" coords="141,512,260,539"/>
+<area shape="rect" id="node15" href="$class_gestor_usuarios.html#a3b929870c33c4864d3c1f32f2614a64d" title="GestorUsuarios::conexion" alt="" coords="115,259,287,285"/>
+<area shape="rect" id="node16" href="$class_gestor_usuarios.html#a41196c2a9b3abd71e7eb8f79fd765960" title="GestorUsuarios::estaConectado" alt="" coords="345,352,552,379"/>
+<area shape="rect" id="node17" href="$class_gestor_usuarios.html#a2a20b4c548e4bbe113174a416873194a" title="GestorUsuarios::usuarios\lConectados" alt="" coords="116,563,285,605"/>
+<area shape="rect" id="node6" href="$class_usuario.html#aceb0e105938da68e83cfa8f45ec41487" title="Usuario::getId" alt="" coords="397,107,500,133"/>
+<area shape="rect" id="node7" href="$class_usuario.html#a322129e7a34d7b332af4dfa13a4fb8d9" title="Usuario::getClave" alt="" coords="387,157,510,184"/>
+<area shape="rect" id="node8" href="$class_gestor_usuarios.html#a14c8dfce3dabbbdc4cd6214e6093ed60" title="GestorUsuarios::comprueba\lClave" alt="" coords="357,209,541,250"/>
+<area shape="rect" id="node9" href="$class_check_clave.html#a7f2bf7386f3f4d3ae9bc0811141fcaa2" title="CheckClave::check" alt="" coords="600,216,733,243"/>
+</map>

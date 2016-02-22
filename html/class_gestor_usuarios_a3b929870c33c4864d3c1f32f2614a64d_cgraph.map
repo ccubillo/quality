@@ -1,0 +1,6 @@
+<map id="GestorUsuarios::conexion" name="GestorUsuarios::conexion">
+<area shape="rect" id="node2" href="$class_gestor_usuarios.html#a41196c2a9b3abd71e7eb8f79fd765960" title="GestorUsuarios::estaConectado" alt="" coords="225,5,432,32"/>
+<area shape="rect" id="node3" href="$class_gestor_usuarios.html#a14c8dfce3dabbbdc4cd6214e6093ed60" title="GestorUsuarios::comprueba\lClave" alt="" coords="237,57,421,98"/>
+<area shape="rect" id="node5" href="$class_gestor_usuarios.html#a7f941f9780501cd260591a96ba30d048" title="GestorUsuarios::buscaUsuario" alt="" coords="229,123,428,149"/>
+<area shape="rect" id="node4" href="$class_check_clave.html#a7f2bf7386f3f4d3ae9bc0811141fcaa2" title="CheckClave::check" alt="" coords="480,64,613,91"/>
+</map>

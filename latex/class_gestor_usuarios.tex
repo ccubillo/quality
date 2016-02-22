@@ -1,0 +1,444 @@
+\hypertarget{class_gestor_usuarios}{}\section{Gestor\+Usuarios Class Reference}
+\label{class_gestor_usuarios}\index{Gestor\+Usuarios@{Gestor\+Usuarios}}
+
+
+{\ttfamily \#include $<$Gestor\+Usuarios.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_gestor_usuarios_a5e10ca400b0d699a70aa9aba8189b389}{Gestor\+Usuarios} ()
+\item 
+\hyperlink{class_gestor_usuarios_a540f562d1cc4e775874ca59fb58460f2}{Gestor\+Usuarios} (\hyperlink{class_gestor_usuarios}{Gestor\+Usuarios} \&orig)
+\item 
+virtual \hyperlink{class_gestor_usuarios_a5d3e11b3129b1d988fe045cf38518ccb}{$\sim$\+Gestor\+Usuarios} ()
+\item 
+\hyperlink{class_gestor_usuarios}{Gestor\+Usuarios} \& \hyperlink{class_gestor_usuarios_abd8499f2178dc4e730674a78ecddae79}{operator=} (\hyperlink{class_gestor_usuarios}{Gestor\+Usuarios} \&g)
+\item 
+void \hyperlink{class_gestor_usuarios_a0c04ca0167fd1f00d8df198441763311}{alta\+Usuario} (\hyperlink{class_usuario}{Usuario} \&u)
+\item 
+void \hyperlink{class_gestor_usuarios_a68d73f9a0ede622220012502ffc23dcf}{baja\+Usuario} (string \&id)
+\item 
+void \hyperlink{class_gestor_usuarios_ad14240167762426efe2c8f2af2421fe0}{cambia\+Clave} (string \&id, string \&clave)
+\item 
+\hyperlink{class_usuario}{Usuario} \& \hyperlink{class_gestor_usuarios_a7f941f9780501cd260591a96ba30d048}{busca\+Usuario} (string \&id)
+\item 
+void \hyperlink{class_gestor_usuarios_a3b929870c33c4864d3c1f32f2614a64d}{conexion} (string \&id, string \&clave)
+\item 
+void \hyperlink{class_gestor_usuarios_a1e57859037abf37a190ad2c60ed22f2b}{desconexion} (string \&id)
+\item 
+bool \hyperlink{class_gestor_usuarios_a41196c2a9b3abd71e7eb8f79fd765960}{esta\+Conectado} (string \&id)
+\item 
+set$<$ string $>$ \hyperlink{class_gestor_usuarios_a2a20b4c548e4bbe113174a416873194a}{usuarios\+Conectados} ()
+\item 
+bool \hyperlink{class_gestor_usuarios_a14c8dfce3dabbbdc4cd6214e6093ed60}{comprueba\+Clave} (string \&clave)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Users manager managed users and connect users 
+
+Definition at line 18 of file Gestor\+Usuarios.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{Gestor\+Usuarios()}{GestorUsuarios()}}]{\setlength{\rightskip}{0pt plus 5cm}Gestor\+Usuarios\+::\+Gestor\+Usuarios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a5e10ca400b0d699a70aa9aba8189b389}{}\label{class_gestor_usuarios_a5e10ca400b0d699a70aa9aba8189b389}
+User manager constructor 
+
+Definition at line 17 of file Gestor\+Usuarios.\+cpp.
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{Gestor\+Usuarios(\+Gestor\+Usuarios \&orig)}{GestorUsuarios(GestorUsuarios &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Gestor\+Usuarios\+::\+Gestor\+Usuarios (
+\begin{DoxyParamCaption}
+\item[{{\bf Gestor\+Usuarios} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a540f562d1cc4e775874ca59fb58460f2}{}\label{class_gestor_usuarios_a540f562d1cc4e775874ca59fb58460f2}
+User manager copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em orig} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 23 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a540f562d1cc4e775874ca59fb58460f2_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!````~Gestor\+Usuarios@{$\sim$\+Gestor\+Usuarios}}
+\index{````~Gestor\+Usuarios@{$\sim$\+Gestor\+Usuarios}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{$\sim$\+Gestor\+Usuarios()}{~GestorUsuarios()}}]{\setlength{\rightskip}{0pt plus 5cm}Gestor\+Usuarios\+::$\sim$\+Gestor\+Usuarios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_gestor_usuarios_a5d3e11b3129b1d988fe045cf38518ccb}{}\label{class_gestor_usuarios_a5d3e11b3129b1d988fe045cf38518ccb}
+User manager destructor 
+
+Definition at line 39 of file Gestor\+Usuarios.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!alta\+Usuario@{alta\+Usuario}}
+\index{alta\+Usuario@{alta\+Usuario}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{alta\+Usuario(\+Usuario \&u)}{altaUsuario(Usuario &u)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gestor\+Usuarios\+::alta\+Usuario (
+\begin{DoxyParamCaption}
+\item[{{\bf Usuario} \&}]{u}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a0c04ca0167fd1f00d8df198441763311}{}\label{class_gestor_usuarios_a0c04ca0167fd1f00d8df198441763311}
+To register user 
+\begin{DoxyParams}{Parameters}
+{\em u} & user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a0c04ca0167fd1f00d8df198441763311_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_gestor_usuarios_a0c04ca0167fd1f00d8df198441763311_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!baja\+Usuario@{baja\+Usuario}}
+\index{baja\+Usuario@{baja\+Usuario}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{baja\+Usuario(string \&id)}{bajaUsuario(string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gestor\+Usuarios\+::baja\+Usuario (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a68d73f9a0ede622220012502ffc23dcf}{}\label{class_gestor_usuarios_a68d73f9a0ede622220012502ffc23dcf}
+to unsubscribe a user 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a68d73f9a0ede622220012502ffc23dcf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_gestor_usuarios_a68d73f9a0ede622220012502ffc23dcf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!busca\+Usuario@{busca\+Usuario}}
+\index{busca\+Usuario@{busca\+Usuario}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{busca\+Usuario(string \&id)}{buscaUsuario(string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Usuario} \& Gestor\+Usuarios\+::busca\+Usuario (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a7f941f9780501cd260591a96ba30d048}{}\label{class_gestor_usuarios_a7f941f9780501cd260591a96ba30d048}
+To find a user 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user found 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a7f941f9780501cd260591a96ba30d048_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!cambia\+Clave@{cambia\+Clave}}
+\index{cambia\+Clave@{cambia\+Clave}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{cambia\+Clave(string \&id, string \&clave)}{cambiaClave(string &id, string &clave)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gestor\+Usuarios\+::cambia\+Clave (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id, }
+\item[{string \&}]{clave}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_ad14240167762426efe2c8f2af2421fe0}{}\label{class_gestor_usuarios_ad14240167762426efe2c8f2af2421fe0}
+To change password 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+{\em clave} & key of the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_ad14240167762426efe2c8f2af2421fe0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_gestor_usuarios_ad14240167762426efe2c8f2af2421fe0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!comprueba\+Clave@{comprueba\+Clave}}
+\index{comprueba\+Clave@{comprueba\+Clave}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{comprueba\+Clave(string \&clave)}{compruebaClave(string &clave)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Gestor\+Usuarios\+::comprueba\+Clave (
+\begin{DoxyParamCaption}
+\item[{string \&}]{clave}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a14c8dfce3dabbbdc4cd6214e6093ed60}{}\label{class_gestor_usuarios_a14c8dfce3dabbbdc4cd6214e6093ed60}
+Check\+Key function check is the key is correct 
+\begin{DoxyParams}{Parameters}
+{\em clave} & key of user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a14c8dfce3dabbbdc4cd6214e6093ed60_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a14c8dfce3dabbbdc4cd6214e6093ed60_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!conexion@{conexion}}
+\index{conexion@{conexion}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{conexion(string \&id, string \&clave)}{conexion(string &id, string &clave)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gestor\+Usuarios\+::conexion (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id, }
+\item[{string \&}]{clave}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a3b929870c33c4864d3c1f32f2614a64d}{}\label{class_gestor_usuarios_a3b929870c33c4864d3c1f32f2614a64d}
+To connect a user 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+{\em clave} & key of the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 159 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a3b929870c33c4864d3c1f32f2614a64d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_gestor_usuarios_a3b929870c33c4864d3c1f32f2614a64d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!desconexion@{desconexion}}
+\index{desconexion@{desconexion}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{desconexion(string \&id)}{desconexion(string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Gestor\+Usuarios\+::desconexion (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a1e57859037abf37a190ad2c60ed22f2b}{}\label{class_gestor_usuarios_a1e57859037abf37a190ad2c60ed22f2b}
+To disconnect a user 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 184 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a1e57859037abf37a190ad2c60ed22f2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!esta\+Conectado@{esta\+Conectado}}
+\index{esta\+Conectado@{esta\+Conectado}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{esta\+Conectado(string \&id)}{estaConectado(string &id)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Gestor\+Usuarios\+::esta\+Conectado (
+\begin{DoxyParamCaption}
+\item[{string \&}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a41196c2a9b3abd71e7eb8f79fd765960}{}\label{class_gestor_usuarios_a41196c2a9b3abd71e7eb8f79fd765960}
+To check if a user is connect 
+\begin{DoxyParams}{Parameters}
+{\em id} & of the user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value (true if connect or false is not) 
+\end{DoxyReturn}
+
+
+Definition at line 198 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_a41196c2a9b3abd71e7eb8f79fd765960_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!operator=@{operator=}}
+\index{operator=@{operator=}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{operator=(\+Gestor\+Usuarios \&g)}{operator=(GestorUsuarios &g)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gestor\+Usuarios} \& Gestor\+Usuarios\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Gestor\+Usuarios} \&}]{g}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_abd8499f2178dc4e730674a78ecddae79}{}\label{class_gestor_usuarios_abd8499f2178dc4e730674a78ecddae79}
+User manager operator= define operator = 
+\begin{DoxyParams}{Parameters}
+{\em g} & a user manager \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_gestor_usuarios_abd8499f2178dc4e730674a78ecddae79_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Gestor\+Usuarios@{Gestor\+Usuarios}!usuarios\+Conectados@{usuarios\+Conectados}}
+\index{usuarios\+Conectados@{usuarios\+Conectados}!Gestor\+Usuarios@{Gestor\+Usuarios}}
+\subsubsection[{\texorpdfstring{usuarios\+Conectados()}{usuariosConectados()}}]{\setlength{\rightskip}{0pt plus 5cm}set$<$ string $>$ Gestor\+Usuarios\+::usuarios\+Conectados (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_gestor_usuarios_a2a20b4c548e4bbe113174a416873194a}{}\label{class_gestor_usuarios_a2a20b4c548e4bbe113174a416873194a}
+Show users connect \begin{DoxyReturn}{Returns}
+a set of users 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file Gestor\+Usuarios.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_gestor_usuarios_a2a20b4c548e4bbe113174a416873194a_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_gestor_usuarios_8h}{Gestor\+Usuarios.\+h}\item 
+\hyperlink{_gestor_usuarios_8cpp}{Gestor\+Usuarios.\+cpp}\end{DoxyCompactItemize}
