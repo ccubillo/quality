@@ -16,11 +16,7 @@ GestorUsuarios::GestorUsuarios() {
 }
 /**
  * User manager copy constructor
-<<<<<<< HEAD
- * @param [in] orig
-=======
- * @param orig a copy managed
->>>>>>> branch 'master' of https://github.com/ccubillo/quality.git
+ * @param [in] orig the original object to be copied.
  */
 GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     this->usuarios = orig.usuarios;
@@ -65,11 +61,7 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
 /**
  * CheckKey function
  * check is the key is correct
-<<<<<<< HEAD
- * @param [in] clave key of user
-=======
- * @param clave password of user
->>>>>>> branch 'master' of https://github.com/ccubillo/quality.git
+ * @param [in] clave password of user
  * @return a boolean value
  */
 bool GestorUsuarios::compruebaClave(string &clave) {
@@ -123,7 +115,7 @@ void GestorUsuarios::bajaUsuario(string &id) {
 /**
  * To change password
  * @param [in] id of the user
- * @param clave key of the user
+ * @param clave password of the user
  */
 void GestorUsuarios::cambiaClave(string &id, string &clave) {
     if (compruebaClave(clave)) {
@@ -160,7 +152,7 @@ Usuario& GestorUsuarios::buscaUsuario(string &id) {
 /**
  * To connect a user
  * @param [in] id of the user
- * @param [in] clave key of the user
+ * @param [in] clave password of the user
  */
 void GestorUsuarios::conexion(string &id, string &clave) {
     std::map<string, Usuario, less<string> >::iterator i;

@@ -19,9 +19,9 @@ Usuario::Usuario() {
 /**
  * user constructor with parameters.
  * set the variables with the values passed.
- * @param id the user identifier (each user have an unique identifier).
- * @param clave the user password (user need it to connect).
- * @param nombre the name of the user.
+ * @param [in] id the user identifier (each user have an unique identifier).
+ * @param [in] clave the user password (user need it to connect).
+ * @param [in] nombre the name of the user.
  */
 Usuario::Usuario(string new_id, string new_clave, string new_nombre) {
     id = new_id;
@@ -31,7 +31,7 @@ Usuario::Usuario(string new_id, string new_clave, string new_nombre) {
 
 /**
  * user copy constructor.
- * @param orig user to copy.
+ * @param [in] orig the original object to be copied.
  */
 Usuario::Usuario(const Usuario& orig) {
     id = orig.id;
@@ -72,7 +72,7 @@ string Usuario::getNombre(){
 
 /**
  * set the user password.
- * @param clave the new password (to change password).
+ * @param [in] clave the new password (to change password).
  */
 void Usuario::setClave(string &clave){
     this->clave = clave;
@@ -90,7 +90,7 @@ string Usuario::toString(){
 
 /**
  * set the user name.
- * @param nombre the new name (to register).
+ * @param [in] nombre the new name (to register).
  */
 void Usuario::setNombre(string& nombre) {
     this->nombre = nombre;
@@ -98,7 +98,7 @@ void Usuario::setNombre(string& nombre) {
 
 /**
  * set the user id.
- * @param id the new id(program does it automatically).
+ * @param [in] id the new id(program does it automatically).
  */
 void Usuario::setId(string& id) {
     this->id = id;

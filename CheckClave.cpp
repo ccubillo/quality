@@ -29,7 +29,7 @@ CheckClave::CheckClave() {
 }
 /**
 * CheckKey copy constructor
-* @param orig a checkKey
+* @param [in] orig a checkKey
 */
 CheckClave::CheckClave(CheckClave& orig) {
     this->arbol = orig.arbol;
@@ -43,7 +43,7 @@ CheckClave::~CheckClave() {
 /**
  * Operator= CheckKey
  * define operator =
- * @param c a checkKey
+ * @param [in] c a checkKey
  * @return a checkKey
  */
 CheckClave& CheckClave::operator=(CheckClave &c) {
@@ -53,7 +53,7 @@ CheckClave& CheckClave::operator=(CheckClave &c) {
 /**
  * Check function
  * check is the password is correct, if it is correct return 0
- * @param s a word of dictionary to check if password is safe
+ * @param [in] s a word of dictionary to check if password is safe
  * @return an integer (0 if key is correct)
  */
 int CheckClave::check(string& s) {
