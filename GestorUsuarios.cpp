@@ -50,9 +50,9 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
     this->usuarios.clear();
     
     this->usuarios = g.usuarios;
-    std::map<string, Usuario*, less<string> >::iterator it;
+    std::map<string, Usuario*, less<string> >::const_iterator it;
     it=g.conectados.begin();
-    while(it!=g.conectados.end())
+    while(g.conectados.begin()!=g.conectados.end())
     {   
         string id=it->first;
         this->conectados.insert(std::pair<string, Usuario*>(id, &buscaUsuario(id)));

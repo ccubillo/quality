@@ -24,7 +24,7 @@ private:
 
 public:
     Usuario();
-    Usuario(string id, string clave, string nombre);
+    Usuario(string new_id, string new_clave, string new_nombre);
     Usuario(const Usuario& orig);
     virtual ~Usuario();
     string getId();

@@ -25,10 +25,10 @@ Usuario::Usuario() {
  * @param clave the user password.
  * @param nombre the name of the user.
  */
-Usuario::Usuario(string id, string clave, string nombre) {
-    this->id = id;
-    this->clave = clave;
-    this->nombre = nombre;
+Usuario::Usuario(string new_id, string new_clave, string new_nombre) {
+    id = new_id;
+    clave = new_clave;
+    nombre = new_nombre;
 }
 
 /**

@@ -64,7 +64,7 @@ int CheckClave::check(string& s) {
     //Realizo el check
     string result;
     int contador = s.size();
-    if (contador < 6) {
+    if (contador < PASSWORD_SIZE) {
         return -1;
     } else if (arbol.find(s) != arbol.end()) {
         return -2;

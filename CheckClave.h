@@ -19,6 +19,7 @@ using namespace std;
 class CheckClave {
 private:
     set<string> arbol;///<tree compounds of words
+     const int PASSWORD_SIZE = 6;
 public:
 
     CheckClave();
