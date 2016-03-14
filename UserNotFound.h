@@ -1,9 +1,6 @@
-/* 
- /*
- * File:   user not found.h
- * Author: Carolina y María
- *
- * Created on 18 de noviembre de 2015, 18:08
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #ifndef USER_NOT_FOUND_H

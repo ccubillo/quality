@@ -1,8 +1,6 @@
-/*
- * File:   password not accepted.h
- * Author: Carolina y María
- *
- * Created on 18 de noviembre de 2015, 18:06
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #ifndef PASSWORD_NOT_ACCEPTED_H

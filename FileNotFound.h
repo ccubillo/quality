@@ -1,8 +1,6 @@
-/* 
- * File:   file not found.h
- * Author: Carolina y Maria
- *
- * Created on 28 de octubre de 2015, 21:46
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #ifndef FILE_NOT_FOUND_H

@@ -1,8 +1,6 @@
-/* 
- * File:   main.cpp
- * Author: Carolina y Maria
- *
- * Created on 13 de noviembre de 2015, 17:51
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #include <cstdlib>
@@ -10,10 +8,10 @@
 #include "CheckClave.h"
 #include "Usuario.h"
 #include "GestorUsuarios.h"
-#include "file not found.h"
-#include "existing user.h"
-#include "password not accepted.h"
-#include "user not found.h"
+#include "FileNotFound.h"
+#include "ExistingUser.h"
+#include "PasswordNotAccepted.h"
+#include "UserNotFound.h"
 
 using namespace std;
 

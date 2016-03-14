@@ -1,8 +1,6 @@
-/* 
- * File:   GestorUsuarios.h
- * Author: Carolina y María
- *
- * Created on 14 de noviembre de 2015, 13:06
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #ifndef GESTORUSUARIOS_H

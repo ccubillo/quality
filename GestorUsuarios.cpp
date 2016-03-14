@@ -1,6 +1,6 @@
 /* 
  * File:   GestorUsuarios.cpp
- * Author: Carolina y María
+ * Author: Carolina y Maria
  * 
  * Created on 14 de noviembre de 2015, 13:06
  */
@@ -8,9 +8,9 @@
 #include "GestorUsuarios.h"
 #include <iostream>
 #include "CheckClave.h"
-#include "existing user.h"
-#include "password not accepted.h"
-#include "user not found.h"
+#include "ExistingUser.h"
+#include "PasswordNotAccepted.h"
+#include "UserNotFound.h"
 /**
  * User manager constructor
  */
@@ -102,7 +102,7 @@ void GestorUsuarios::altaUsuario(Usuario &u) {
  */
 void GestorUsuarios::bajaUsuario(string &id) {
 	//Primero comprobar que esta conectado y luego llamar a desconexion.
-	//Si no siempre salta la excepción de que no está encontrado porque no está conectado.
+	//Si no siempre salta la excepci��n de que no est�� encontrado porque no est�� conectado.
     std::map<string, Usuario, less<string> >::iterator it;
     it = usuarios.find(id);
     if (it != usuarios.end()) {
@@ -131,7 +131,7 @@ void GestorUsuarios::cambiaClave(string &id, string &clave) {
             throw user_not_found();
         }
     } else {
-//        cout << "contraseña no valida" << endl;
+//        cout << "contrase��a no valida" << endl;
         throw password_not_accepted();
     }
 }

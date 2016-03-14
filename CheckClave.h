@@ -1,8 +1,6 @@
-/* 
- * File:   CheckClave.h
- * Author: Carolina y María
- *
- * Created on 13 de noviembre de 2015, 17:57
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #ifndef CHECKCLAVE_H

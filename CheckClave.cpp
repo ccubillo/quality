@@ -1,14 +1,13 @@
-/* 
- * File:   CheckClave.cpp
- * Author: Carolina y María
- * 
- * Created on 13 de noviembre de 2015, 17:57
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #include "CheckClave.h"
 #include <fstream>
-#include "file not found.h"
+#include "FileNotFound.h"
 #include <iostream>
+
 /**
 * CheckKey constructor
 * read the file lemario-espanol-utf8.txt and initialize tree
