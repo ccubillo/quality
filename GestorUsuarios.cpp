@@ -18,7 +18,7 @@ GestorUsuarios::GestorUsuarios() {
 }
 /**
  * User manager copy constructor
- * @param orig
+ * @param orig a copy managed
  */
 GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     this->usuarios = orig.usuarios;
@@ -63,7 +63,7 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
 /**
  * CheckKey function
  * check is the key is correct
- * @param clave key of user
+ * @param clave password of user
  * @return a boolean value
  */
 bool GestorUsuarios::compruebaClave(string &clave) {

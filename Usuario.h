@@ -10,7 +10,8 @@
 using namespace std;
 
 /**
- * class representing an user, with an unique id, name and password.
+ * @brief class representing an user, with an unique id, name and password. The user can change it password and name.
+ * 		  In addition the user can consult it identifier, password and name.
  */
 class Usuario {
 private:
