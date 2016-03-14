@@ -1,8 +1,6 @@
-/* 
- * File:   GestorUsuarios.cpp
- * Author: Carolina y Maria
- * 
- * Created on 14 de noviembre de 2015, 13:06
+/**
+ * @author: Carolina y Maria
+ * @since 1.0
  */
 
 #include "GestorUsuarios.h"
@@ -18,7 +16,7 @@ GestorUsuarios::GestorUsuarios() {
 }
 /**
  * User manager copy constructor
- * @param orig
+ * @param [in] orig
  */
 GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     this->usuarios = orig.usuarios;
@@ -41,7 +39,7 @@ GestorUsuarios::~GestorUsuarios() {
 /**
  * User manager operator=
  * define operator =
- * @param g a user manager
+ * @param  [in] g a user manager
  * @return
  */
 GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
@@ -63,7 +61,7 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
 /**
  * CheckKey function
  * check is the key is correct
- * @param clave key of user
+ * @param [in] clave key of user
  * @return a boolean value
  */
 bool GestorUsuarios::compruebaClave(string &clave) {
@@ -80,7 +78,7 @@ bool GestorUsuarios::compruebaClave(string &clave) {
 }
 /**
  * To register user
- * @param u user
+ * @param [in] u user
  */
 void GestorUsuarios::altaUsuario(Usuario &u) {
     std::map<string, Usuario, less<string> >::iterator it;
@@ -98,7 +96,7 @@ void GestorUsuarios::altaUsuario(Usuario &u) {
 }
 /**
  * to unsubscribe a user
- * @param id of the user
+ * @param [in] id of the user
  */
 void GestorUsuarios::bajaUsuario(string &id) {
 	//Primero comprobar que esta conectado y luego llamar a desconexion.
@@ -116,7 +114,7 @@ void GestorUsuarios::bajaUsuario(string &id) {
 }
 /**
  * To change password
- * @param id of the user
+ * @param [in] id of the user
  * @param clave key of the user
  */
 void GestorUsuarios::cambiaClave(string &id, string &clave) {
@@ -137,7 +135,7 @@ void GestorUsuarios::cambiaClave(string &id, string &clave) {
 }
 /**
  * To find a user
- * @param id of the user
+ * @param [in] id of the user
  * @return user found
  */
 Usuario& GestorUsuarios::buscaUsuario(string &id) {
@@ -153,8 +151,8 @@ Usuario& GestorUsuarios::buscaUsuario(string &id) {
 }
 /**
  * To connect a user
- * @param id of the user
- * @param clave key of the user
+ * @param [in] id of the user
+ * @param [in] clave key of the user
  */
 void GestorUsuarios::conexion(string &id, string &clave) {
     std::map<string, Usuario, less<string> >::iterator i;
@@ -179,7 +177,7 @@ void GestorUsuarios::conexion(string &id, string &clave) {
 }
 /**
  * To disconnect a user
- * @param id of the user
+ * @param [in] id of the user
  */
 void GestorUsuarios::desconexion(string &id) {
     std::map<string, Usuario*, less<string> >::iterator it;
@@ -192,7 +190,7 @@ void GestorUsuarios::desconexion(string &id) {
 }
 /**
  * To check if a user is connect
- * @param id of the user
+ * @param [in] id of the user
  * @return a boolean value (true if connect or false is not)
  */
 bool GestorUsuarios::estaConectado(string &id) {
@@ -213,25 +211,3 @@ set<string> GestorUsuarios::usuariosConectados() {
     }
     return u;
 }
-
-//void GestorUsuarios::muestra() {
-//    cout << "Total usuarios " << usuarios.size() << endl;
-//    std::map<string, Usuario, less<string> >::iterator it;
-//    for (it = usuarios.begin(); it != usuarios.end(); it++) {
-//        cout << "string e id: " << it->first << " clave: " << it->second.getClave()
-//                << " nombre: " << it->second.getNombre() << endl;
-//        cout << endl;
-//    }
-//
-//}
-//void GestorUsuarios::muestraConectados(std::map<string, Usuario*, less<string> > conectados) {
-//    cout << "Total conectados " << conectados.size() << endl;
-//    std::map<string, Usuario*, less<string> >::iterator it;
-//    
-//    for (it = conectados.begin(); it != conectados.end(); it++) {
-//        cout << "string e id: " << it->first  << " clave: " << it->second->getClave()
-//                << " nombre: " << it->second->getNombre() << endl;
-//        cout << endl;
-//    }
-//
-//}
