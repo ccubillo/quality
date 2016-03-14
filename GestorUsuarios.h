@@ -11,7 +11,7 @@
 using namespace std;
 /**
  * Users manager
- * managed users and connect users
+ * @brief managed users and connect users. This can connect,register,unsubscribe, look for and disconnet users
  */
 class GestorUsuarios {
 private:

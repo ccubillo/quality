@@ -9,6 +9,7 @@
 using namespace std;
 /**
  * File not found exception
+ * @brief Show file not found exception
  */
 class file_not_found: public exception{
 public:

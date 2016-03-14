@@ -13,6 +13,7 @@
 using namespace std;
 /**
  * CheckKey class
+ * @brief Check if password is safe
  */
 class CheckClave {
 private:

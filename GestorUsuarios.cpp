@@ -16,7 +16,11 @@ GestorUsuarios::GestorUsuarios() {
 }
 /**
  * User manager copy constructor
+<<<<<<< HEAD
  * @param [in] orig
+=======
+ * @param orig a copy managed
+>>>>>>> branch 'master' of https://github.com/ccubillo/quality.git
  */
 GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     this->usuarios = orig.usuarios;
@@ -61,7 +65,11 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
 /**
  * CheckKey function
  * check is the key is correct
+<<<<<<< HEAD
  * @param [in] clave key of user
+=======
+ * @param clave password of user
+>>>>>>> branch 'master' of https://github.com/ccubillo/quality.git
  * @return a boolean value
  */
 bool GestorUsuarios::compruebaClave(string &clave) {

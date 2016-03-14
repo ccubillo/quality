@@ -12,6 +12,7 @@ using namespace std;
 
 /**
  * custom exception thrown in case of no user is found.
+ * @brief Show user not found exception
  */
 class user_not_found: public exception{
 public:

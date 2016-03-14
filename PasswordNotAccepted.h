@@ -12,6 +12,7 @@ using namespace std;
 
 /**
  * custom exception thrown when a password is not valid.
+ * @brief Show password not accepted exception
  */
 class password_not_accepted: public exception{
 public:
