@@ -18,8 +18,7 @@ GestorUsuarios::GestorUsuarios() {
  * User manager copy constructor
  * @param [in] orig the original object to be copied.
  */
-GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
-    this->usuarios = orig.usuarios;
+GestorUsuarios::GestorUsuarios(GestorUsuarios& orig): usuarios(orig.usuarios) {
     //Al hacer la copia de usuarios la direccion de memoria cambia y por eso busco los conectados en los usuarios copiados para obtener su nueva dir. de memoria
     std::map<string, Usuario*, less<string> >::iterator it;
     it=orig.conectados.begin();
@@ -27,7 +26,7 @@ GestorUsuarios::GestorUsuarios(GestorUsuarios& orig) {
     {   
         string id=it->first;
         this->conectados.insert(std::pair<string, Usuario*>(id, &buscaUsuario(id)));
-        it++;
+        ++it;
     }
     
 }
@@ -54,7 +53,7 @@ GestorUsuarios& GestorUsuarios::operator=(GestorUsuarios &g)
     {   
         string id=it->first;
         this->conectados.insert(std::pair<string, Usuario*>(id, &buscaUsuario(id)));
-        it++;
+        ++it;
     }
     return *this;
 }
@@ -207,7 +206,7 @@ set<string> GestorUsuarios::usuariosConectados() {
     set<string> u;
     while(it != conectados.end()){
         u.insert(it->first);
-        it++;
+        ++it;
     }
     return u;
 }

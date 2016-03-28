@@ -50,9 +50,9 @@ int main(int argc, char** argv) {
                     u.setId(nombre);
                     try {
                         g.altaUsuario(u);
-                    } catch (existing_user ex) {
+                    } catch (existing_user &ex) {
                         cout << "Fallo usuario ya existente";
-                    } catch (password_not_accepted ex) {
+                    } catch (password_not_accepted  &ex) {
                         cout << "Fallo clave no valida";
                     }
                     break;
@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
                     cin >> nombre;
                     try {
                         g.bajaUsuario(nombre);
-                    } catch (user_not_found ex) {
+                    } catch (user_not_found &ex) {
                         cout << "Usuario no encontrado";
                     }
                     break;
@@ -72,9 +72,9 @@ int main(int argc, char** argv) {
                     cin >> clave;
                     try {
                         g.cambiaClave(nombre, clave);
-                    } catch (user_not_found ex) {
+                    } catch (user_not_found &ex) {
                         cout << "Usuario no encontrado";
-                    } catch (password_not_accepted ex) {
+                    } catch (password_not_accepted &ex) {
                         cout << "Fallo clave no valida";
                     }
                     break;
@@ -83,7 +83,7 @@ int main(int argc, char** argv) {
                     cin >> nombre;
                     try{
                     cout << g.buscaUsuario(nombre).toString() << endl;
-                    } catch (user_not_found ex) {
+                    } catch (user_not_found &ex) {
                         cout << "Usuario no encontrado";
                     }
                     break;
@@ -94,11 +94,11 @@ int main(int argc, char** argv) {
                     cin >> clave;
                     try{
                     g.conexion(nombre, clave);
-                    }catch (existing_user ex) {
+                    }catch (existing_user &ex) {
                         cout << "Fallo usuario ya existente";
-                    } catch (password_not_accepted ex) {
+                    } catch (password_not_accepted &ex) {
                         cout << "Fallo clave no valida";
-                    } catch (user_not_found ex) {
+                    } catch (user_not_found &ex) {
                         cout << "Usuario no encontrado";
                     }
                     break;
@@ -107,7 +107,7 @@ int main(int argc, char** argv) {
                     cin >> nombre;
                     try{
                     g.desconexion(nombre);
-                    } catch (user_not_found ex) {
+                    } catch (user_not_found &ex) {
                         cout << "Usuario no encontrado";
                     }
                     break;
@@ -126,7 +126,7 @@ int main(int argc, char** argv) {
                         it = arb.begin();
                         while (it != arb.end()) {
                             cout << *it << endl;
-                            it++;
+                            ++it;
                         }
                     } else cout << "No hay usuarios conectados" << endl;
                     break;

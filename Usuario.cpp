@@ -10,10 +10,7 @@
  * user default constructor.
  * sets all variables class members to null.
  */
-Usuario::Usuario() {
-    id = "null";
-    clave = "null";
-    nombre = "null";
+Usuario::Usuario(): id("null"), clave("null"), nombre("null") {
 }
 
 /**
@@ -23,20 +20,14 @@ Usuario::Usuario() {
  * @param [in] clave the user password (user need it to connect).
  * @param [in] nombre the name of the user.
  */
-Usuario::Usuario(string new_id, string new_clave, string new_nombre) {
-    id = new_id;
-    clave = new_clave;
-    nombre = new_nombre;
+Usuario::Usuario(string new_id, string new_clave, string new_nombre): id(new_id), clave(new_clave), nombre(new_nombre) {
 }
 
 /**
  * user copy constructor.
  * @param [in] orig the original object to be copied.
  */
-Usuario::Usuario(const Usuario& orig) {
-    id = orig.id;
-    clave = orig.clave;
-    nombre = orig.nombre;
+Usuario::Usuario(const Usuario& orig): id(orig.id), clave(orig.clave), nombre(orig.nombre) {
 }
 
 /**
@@ -60,14 +51,6 @@ string Usuario::getId(){
  */
 string Usuario::getClave(){
     return this->clave;
-}
-
-/**
- * return the user name.
- * @return user name.
- */
-string Usuario::getNombre(){
-    return this->nombre;
 }
 
 /**
