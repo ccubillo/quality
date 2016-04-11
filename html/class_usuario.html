@@ -112,14 +112,18 @@ $(document).ready(function(){initNavTree('class_usuario.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>class representing an user, with an unique id, name and password. The user can change it password and name. In addition the user can consult it identifier, password and name.  
+ <a href="class_usuario.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_usuario_8h_source.html">Usuario.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa85a5371a098dfba5449140d9b8a472f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#aa85a5371a098dfba5449140d9b8a472f">Usuario</a> ()</td></tr>
+<tr class="memdesc:aa85a5371a098dfba5449140d9b8a472f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source code of <a class="el" href="class_usuario.html" title="class representing an user, with an unique id, name and password. The user can change it password and...">Usuario</a>.  <a href="#aa85a5371a098dfba5449140d9b8a472f">More...</a><br /></td></tr>
 <tr class="separator:aa85a5371a098dfba5449140d9b8a472f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a305eda14decabbd02a61ed4154ea26b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a305eda14decabbd02a61ed4154ea26b9">Usuario</a> (string id, string clave, string nombre)</td></tr>
-<tr class="separator:a305eda14decabbd02a61ed4154ea26b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227937dcdd8f92efea155d0d155f7759"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a227937dcdd8f92efea155d0d155f7759">Usuario</a> (string new_id, string new_clave, string new_nombre)</td></tr>
+<tr class="separator:a227937dcdd8f92efea155d0d155f7759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8c44d4b7d7b2e49542cda79521fffa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#a5b8c44d4b7d7b2e49542cda79521fffa">Usuario</a> (const <a class="el" href="class_usuario.html">Usuario</a> &amp;orig)</td></tr>
 <tr class="separator:a5b8c44d4b7d7b2e49542cda79521fffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4096b0b8300ecb47b10c555fb09c997"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_usuario.html#ab4096b0b8300ecb47b10c555fb09c997">~Usuario</a> ()</td></tr>
@@ -140,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a567493e3fee3c245fee24db39f8d0e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>class representing an user, with an unique id, name and password. </p>
+<div class="textblock"><p>class representing an user, with an unique id, name and password. The user can change it password and name. In addition the user can consult it identifier, password and name. </p>
 
 <p>Definition at line <a class="el" href="_usuario_8h_source.html#l00017">17</a> of file <a class="el" href="_usuario_8h_source.html">Usuario.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -156,13 +160,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>user default constructor. sets all variables class members to null. </p>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00015">15</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Source code of <a class="el" href="class_usuario.html" title="class representing an user, with an unique id, name and password. The user can change it password and...">Usuario</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>: Carolina y Maria </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0 user default constructor. sets all variables class members to null. </dd></dl>
+
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00014">14</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a305eda14decabbd02a61ed4154ea26b9"></a>
+<a class="anchor" id="a227937dcdd8f92efea155d0d155f7759"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -170,19 +177,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Usuario::Usuario </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
+          <td class="paramname"><em>new_id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>clave</em>, </td>
+          <td class="paramname"><em>new_clave</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>nombre</em>&#160;</td>
+          <td class="paramname"><em>new_nombre</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,14 +200,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>user constructor with parameters. set the variables with the values passed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>the user id. </td></tr>
-    <tr><td class="paramname">clave</td><td>the user password. </td></tr>
-    <tr><td class="paramname">nombre</td><td>the name of the user. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>the user identifier (each user have an unique identifier). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clave</td><td>the user password (user need it to connect). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nombre</td><td>the name of the user. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00028">28</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00024">24</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,12 +226,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>user copy constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">orig</td><td>user to copy. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orig</td><td>the original object to be copied. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00038">38</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00031">31</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +257,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>user destructor. does nothing for now. </p>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00048">48</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00038">38</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +276,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>return the user password. </p><dl class="section return"><dt>Returns</dt><dd>user password. </dd></dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00063">63</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00053">53</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -298,7 +305,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>return the user id. </p><dl class="section return"><dt>Returns</dt><dd>user id. </dd></dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00055">55</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00045">45</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -325,9 +332,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>return the user name. </p><dl class="section return"><dt>Returns</dt><dd>user name. </dd></dl>
-
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00071">71</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 </div>
 </div>
@@ -346,12 +350,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>set the user password. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clave</td><td>the new password. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clave</td><td>the new password (to change password). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00079">79</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00061">61</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -380,12 +384,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>set the user id. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>the new id. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>the new id(program does it automatically). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00105">105</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00087">87</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -414,12 +418,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>set the user name. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nombre</td><td>the new name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nombre</td><td>the new name (to register). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00097">97</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00079">79</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -447,7 +451,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>allow to print user information. </p><dl class="section return"><dt>Returns</dt><dd>the string "user.id, user.password, user.name". </dd></dl>
 
-<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00087">87</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_usuario_8cpp_source.html#l00069">69</a> of file <a class="el" href="_usuario_8cpp_source.html">Usuario.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>

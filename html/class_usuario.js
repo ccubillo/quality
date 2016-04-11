@@ -1,7 +1,7 @@
 var class_usuario =
 [
     [ "Usuario", "class_usuario.html#aa85a5371a098dfba5449140d9b8a472f", null ],
-    [ "Usuario", "class_usuario.html#a305eda14decabbd02a61ed4154ea26b9", null ],
+    [ "Usuario", "class_usuario.html#a227937dcdd8f92efea155d0d155f7759", null ],
     [ "Usuario", "class_usuario.html#a5b8c44d4b7d7b2e49542cda79521fffa", null ],
     [ "~Usuario", "class_usuario.html#ab4096b0b8300ecb47b10c555fb09c997", null ],
     [ "getClave", "class_usuario.html#a322129e7a34d7b332af4dfa13a4fb8d9", null ],

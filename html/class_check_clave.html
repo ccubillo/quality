@@ -112,11 +112,15 @@ $(document).ready(function(){initNavTree('class_check_clave.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Check if password is safe.  
+ <a href="class_check_clave.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_check_clave_8h_source.html">CheckClave.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a33e8b9961db4afa6559433f0c6b40473"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_check_clave.html#a33e8b9961db4afa6559433f0c6b40473">CheckClave</a> ()</td></tr>
+<tr class="memdesc:a33e8b9961db4afa6559433f0c6b40473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source code of <a class="el" href="class_check_clave.html" title="Check if password is safe. ">CheckClave</a>.  <a href="#a33e8b9961db4afa6559433f0c6b40473">More...</a><br /></td></tr>
 <tr class="separator:a33e8b9961db4afa6559433f0c6b40473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2a6a9d993f6fca98c5179a34dc8aad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_check_clave.html#a3d2a6a9d993f6fca98c5179a34dc8aad">CheckClave</a> (<a class="el" href="class_check_clave.html">CheckClave</a> &amp;orig)</td></tr>
 <tr class="separator:a3d2a6a9d993f6fca98c5179a34dc8aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f2bf7386f3f4d3ae9bc0811141fcaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CheckKey class </p>
+<div class="textblock"><p>Check if password is safe. </p>
+<p>CheckKey class </p>
 
 <p>Definition at line <a class="el" href="_check_clave_8h_source.html#l00019">19</a> of file <a class="el" href="_check_clave_8h_source.html">CheckClave.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -144,7 +149,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>CheckKey constructor read the file lemario-espanol-utf8.txt and initialize tree </p>
+
+<p>Source code of <a class="el" href="class_check_clave.html" title="Check if password is safe. ">CheckClave</a>. </p>
+<dl class="section author"><dt>Author</dt><dd>: Carolina y Maria </dd></dl>
+<dl class="section since"><dt>Since</dt><dd>1.0 CheckKey constructor read the file lemario-espanol-utf8.txt and initialize tree </dd></dl>
 
 <p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00016">16</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
 
@@ -165,7 +173,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CheckKey copy constructor </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">orig</td><td>a checkKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">orig</td><td>a checkKey </td></tr>
   </table>
   </dd>
 </dl>
@@ -196,7 +204,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>CheckKey destructor </p>
 
-<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00041">41</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00040">40</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
 
 </div>
 </div>
@@ -216,13 +224,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Check function check is the password is correct, if it is correct return 0 </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>a word </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>a word of dictionary to check if password is safe </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>an integer (0 if key is correct) </dd></dl>
 
-<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00060">60</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00059">59</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -255,13 +263,13 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Operator= CheckKey define operator = </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">c</td><td>a checkKey </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a checkKey </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a checkKey </dd></dl>
 
-<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00050">50</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_check_clave_8cpp_source.html#l00049">49</a> of file <a class="el" href="_check_clave_8cpp_source.html">CheckClave.cpp</a>.</p>
 
 </div>
 </div>
