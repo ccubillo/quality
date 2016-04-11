@@ -1,4 +1,5 @@
 /**
+ * @brief Header of UserNotFound.
  * @author: Carolina y Maria
  * @since 1.0
  */

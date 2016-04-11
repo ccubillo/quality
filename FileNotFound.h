@@ -1,4 +1,5 @@
 /**
+ * @brief Header of FileNotFound.
  * @author: Carolina y Maria
  * @since 1.0
  */

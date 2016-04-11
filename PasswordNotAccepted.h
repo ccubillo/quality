@@ -1,4 +1,5 @@
 /**
+ * @brief Header of PasswordNotAccepted.
  * @author: Carolina y Maria
  * @since 1.0
  */

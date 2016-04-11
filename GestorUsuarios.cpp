@@ -1,4 +1,5 @@
 /**
+ * @brief Source code of GestorUsuarios.
  * @author: Carolina y Maria
  * @since 1.0
  */

@@ -1,4 +1,5 @@
 /**
+ * @brief Start point of execution program.
  * @author: Carolina y Maria
  * @since 1.0
  */
@@ -35,7 +36,8 @@ int main(int argc, char** argv) {
             cout << "Opcion: ";
             cin >> n;
 
-            string clave, nombre;
+            string clave;
+			string nombre;
             Usuario u;
             set<string> arb;
             set<string>::iterator it;

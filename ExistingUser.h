@@ -1,4 +1,5 @@
 /**
+ * @brief Header of ExistingUser.
  * @author: Carolina y Maria
  * @since 1.0
  */
@@ -9,6 +10,7 @@
 using namespace std;
 /**
  * Existing user exception
+ * @brief Exception if existing user.
  */
 class existing_user: public exception{
 public:

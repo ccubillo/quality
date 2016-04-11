@@ -1,4 +1,5 @@
 /**
+ * @brief Header of Usuario.
  * @author: Carolina y Maria
  * @since 1.0
  */
